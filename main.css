@@ -1,8 +1,36 @@
 /* Your code here */
 
+body{
+  font-family: 'Segoe UI','Roboto','Noto Sans','Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+.header-nav__container{
+  background-color: #026AA7;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 4px;
+  color: white;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 730px){
+  .header-nav__button#search > input {
+    display: none;
+
+  }
+  .header-nav__button > .boards-label {
+    display: none;
+  }
+
+}
 /* Supplied CSS follows. */
 .header-nav__group{
   display: flex;
+  /* margin: 10px;
+  padding: 10px; */
 }
 
 .header-nav__button {
@@ -24,6 +52,11 @@
   height: 20px;
 }
 
+#alerts{
+  background-color: #CF513D;
+}
+
+
 .header-nav__button#search > input {
   border-style: none;
   border: none;
@@ -32,11 +65,13 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+
 }
 
 .header-nav__button > .boards-label {
   font-weight: 700;
   padding-left: 4px;
+
 }
 
 .header-nav__trello-logo {
